@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مصنف مفردات الأسئلة وفق مستويات بلوم المعرفية في مادة التربية الإسلامية للصفوف (٥-١٢)</title>
+<meta name="theme-color" content="#0b0d17">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+:root{color-scheme:dark;
+ --bg:#0b0d17;--surface:#11152a;--line:rgba(255,255,255,.09);--text:#f3ead7;--muted:#a8a08d;
+ --accent:#ffb347;--world:#ffb347;
+ --lvl1:#5aa9e6;--lvl2:#3fc1a8;--lvl3:#f0b64a;--lvl4:#e8695d;--lvl5:#f0a58c;--lvl6:#a98bd6;
+ --good:#5fd09a;--ease:cubic-bezier(.16,1,.3,1);--ease-io:cubic-bezier(.65,0,.35,1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Tajawal',system-ui,sans-serif;background:var(--bg);color:var(--text);padding:0 18px 40px;overflow-x:hidden;line-height:1.7}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;z-index:60;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.aurora{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.aurora i{position:absolute;width:55vmax;height:55vmax;border-radius:50%;filter:blur(90px);opacity:.3;transition:background-color 1.4s ease}
+.aurora i:nth-child(1){background:var(--world);top:-20vmax;right:-15vmax;animation:drift 26s ease-in-out infinite alternate}
+.aurora i:nth-child(2){background:#3b4cca;bottom:-25vmax;left:-20vmax;opacity:.22;animation:drift 32s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(6vmax,5vmax) scale(1.12)}}
+.progress{position:fixed;inset:0 0 auto 0;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:100% 50%;z-index:70}
+.pill{position:fixed;top:12px;left:50%;translate:-50% 0;z-index:65;display:flex;gap:2px;padding:5px;border-radius:99px;
+ background:rgba(17,21,42,.85);border:1px solid var(--line);backdrop-filter:blur(10px);transition:transform .5s var(--ease)}
+.pill.hide{transform:translateY(-150%)}
+.pill a{color:var(--muted);text-decoration:none;font-size:13.5px;font-weight:700;padding:8px 14px;min-height:36px;border-radius:99px;transition:color .25s,background-color .25s}
+.pill a:hover,.pill a[aria-current]{color:#10131f;background:var(--accent)}
+a:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.app{max-width:1040px;margin:0 auto}
+.hero{display:grid;grid-template-columns:1fr auto;align-items:center;gap:5vw;padding:12vh 4px 6vh;min-height:62svh}
+.eyebrow{font-size:13px;color:var(--muted);margin:0}
+.eyebrow.job{color:var(--accent);font-weight:700;margin-top:2px}
+.vchip{display:inline-block;background:#0c1020;border:1px solid var(--line);border-radius:99px;padding:3px 12px;margin:3px;font-size:13px}
+.lvl-item{cursor:pointer}
+.hero h1{margin:.1em 0 0;font-size:clamp(4.2rem,15vw,9.5rem);font-weight:900;line-height:1.05;color:var(--accent)}
+.mask{display:inline-block;overflow:hidden;padding:.12em .06em .2em}
+.mask>span{display:inline-block}
+.hero-sub{font-size:clamp(1.05rem,2.4vw,1.45rem);font-weight:700;max-width:40ch;margin:.4em 0 1.6rem}
+.cta{display:inline-block;background:var(--accent);color:#10131f;font-weight:900;padding:14px 30px;border-radius:99px;text-decoration:none;transition:transform .25s var(--ease),box-shadow .3s}
+.cta:hover{box-shadow:0 0 36px rgba(255,179,71,.45)}
+.niche{position:relative;overflow:hidden;width:clamp(96px,17vw,180px);aspect-ratio:3/4.2;border-radius:999px 999px 14px 14px;
+ border:1px solid rgba(255,179,71,.35);background:linear-gradient(#0e1226,#0a0c16);box-shadow:0 0 70px rgba(255,170,60,.16)}
+.niche::before{content:"";position:absolute;inset:9px;border-radius:inherit;border:1px solid rgba(255,179,71,.2)}
+.niche::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 52% at var(--gx,50%) var(--gy,70%),rgba(255,196,100,.85),rgba(255,140,40,.25) 48%,transparent 74%);animation:breathe 5s ease-in-out infinite alternate}
+@keyframes breathe{from{opacity:.55}to{opacity:1}}
+.layout{display:grid;grid-template-columns:1fr 220px;gap:18px;align-items:start}
+.sidebar{position:sticky;top:76px}
+section{scroll-margin-top:76px}
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin-bottom:16px;isolation:isolate}
+.card::before{content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;pointer-events:none;opacity:0;transition:opacity .35s;
+ background:radial-gradient(340px circle at var(--mx,50%) var(--my,0),rgba(255,179,71,.13),transparent 62%)}
+.card:hover::before{opacity:1}
+.card h3{margin:0 0 12px;font-size:17px;font-weight:900;display:flex;align-items:center;gap:10px}
+.no{font-size:12px;font-weight:700;color:var(--accent);border:1px solid rgba(255,179,71,.4);border-radius:99px;padding:1px 9px}
+select,textarea,input[type=text]{width:100%;border:1px solid var(--line);background:#0c1020;border-radius:12px;padding:11px 13px;font-family:inherit;font-size:15px;color:var(--text);transition:border-color .25s}
+select:hover,textarea:hover,input:hover{border-color:rgba(255,179,71,.4)}
+option{background:#11152a;color:var(--text)}
+textarea{resize:vertical;min-height:70px}
+::placeholder{color:#7d7766}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;border:0;border-radius:14px;padding:14px;font-family:inherit;font-weight:900;font-size:16px;cursor:pointer;transition:transform .2s var(--ease),box-shadow .3s,opacity .2s}
+.btn:active{transform:scale(.98)}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn-main{background:var(--accent);color:#10131f;margin-bottom:16px}
+.btn-main:hover{box-shadow:0 0 34px rgba(255,179,71,.4)}
+.btn-approve{background:var(--good);color:#0b1a12;margin-top:10px}
+.btn-ghost{background:transparent;border:1.5px solid var(--accent);color:var(--accent)}
+.btn-ghost:hover{background:rgba(255,179,71,.1)}
+.ladder{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:14px}
+.ladder h4{text-align:center;margin:2px 0 4px;font-size:14px;font-weight:900}
+.ladder .hint{text-align:center;font-size:11.5px;color:var(--muted);margin:0 0 12px}
+#orb{position:absolute;left:0;top:0;width:46px;height:46px;border-radius:50%;pointer-events:none;z-index:2;
+ background:radial-gradient(circle,var(--world) 0 28%,transparent 70%);opacity:.9;transition:transform 1.1s var(--ease-io);animation:pulse 2.4s ease-in-out infinite alternate}
+#orb.idle{opacity:.35}
+@keyframes pulse{from{scale:.85}to{scale:1.15}}
+.lvl-item{position:relative;z-index:1;display:flex;align-items:center;gap:9px;background:#0c1020;border:1px solid var(--line);border-radius:14px;padding:8px 10px;margin-bottom:8px;font-size:13.5px;font-weight:700;transition:border-color .5s,background-color .5s}
+.lvl-item.on{border-color:var(--world);background:#161b34}
+.lvl-dot{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#0b0d17;font-size:13px;font-weight:900;flex-shrink:0}
+.lvl-item .lbl{flex:1}
+.lvl-item .cnt{background:rgba(255,255,255,.08);border-radius:8px;padding:1px 8px;font-size:12px}
+.result-level{display:inline-flex;align-items:center;color:#0b0d17;padding:6px 18px;border-radius:99px;font-weight:900;font-size:15px;margin-bottom:12px}
+.result-q{background:#0c1020;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px;font-size:15px;line-height:1.9}
+.result-q b{color:var(--accent)}
+.result-suggest{background:rgba(95,208,154,.08);border:1px solid rgba(95,208,154,.3);border-radius:12px;padding:12px 14px;font-size:14.5px;line-height:1.9}
+.result-suggest .lbl{font-weight:900;color:var(--good);display:block;margin-bottom:4px}
+#resultCard.pop{animation:wipe 1s var(--ease) both}
+#resultCard.pop>*{animation:fadeup .8s var(--ease) both}
+#resultCard.pop>:nth-child(2){animation-delay:.12s}#resultCard.pop>:nth-child(3){animation-delay:.24s}
+#resultCard.pop>:nth-child(4){animation-delay:.36s}#resultCard.pop>:nth-child(5){animation-delay:.48s}
+@keyframes wipe{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
+@keyframes fadeup{from{opacity:0;transform:translateY(14px)}}
+.bank-row{display:flex;align-items:center;gap:10px;padding:9px 4px;border-bottom:1px solid var(--line);font-size:14px}
+.bank-row .lvl-pill{color:#0b0d17;border-radius:14px;padding:2px 11px;font-size:12px;font-weight:800;flex-shrink:0}
+.bank-row .txt{flex:1}.bank-row .grade-tag{font-size:11.5px;color:var(--muted)}
+.muted{color:var(--muted);font-size:13.5px}
+.stats-row{display:flex;flex-wrap:wrap;gap:8px}
+.stat-chip{flex:1;min-width:78px;text-align:center;border-radius:12px;padding:8px 4px;color:#0b0d17;font-size:12px;font-weight:800}
+.stat-chip .num{display:block;font-size:19px;font-weight:900}
+.example-chip{display:block;width:100%;text-align:right;background:#0c1020;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:8px;font-size:14px;cursor:pointer;font-family:inherit;transition:border-color .25s,transform .25s var(--ease)}
+.example-chip:hover{border-color:var(--accent);transform:translateX(-4px)}
+#testInputs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.footer-note{text-align:center;font-size:12px;color:var(--muted);margin-top:10px;padding:0 10px}
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+.js .mask>span{transform:translateY(118%);animation:up 1.1s var(--ease) .15s forwards}
+@keyframes up{to{transform:none}}
+.js .eyebrow,.js .hero-sub,.js .cta,.js .niche{opacity:0;animation:fade .9s var(--ease) forwards}
+.js .hero-sub{animation-delay:.6s}.js .cta{animation-delay:.8s}.js .niche{animation-delay:.3s}
+@keyframes fade{to{opacity:1}}
+@media (max-width:760px){
+ .hero{grid-template-columns:1fr;padding-top:14vh;min-height:0}.niche{order:-1;width:92px}
+ .layout{grid-template-columns:1fr}.sidebar{position:static;order:-1}
+ #levelsList{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+ .lvl-item{margin:0;flex-direction:column;padding:8px 4px;gap:4px;font-size:12px;text-align:center}
+ .lvl-item .lbl{flex:none}.ladder .hint{display:none}
+ .pill a{padding:8px 10px;font-size:12.5px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+ .aurora i{animation:none}
+}
+</style>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><i></i><i></i></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<nav class="pill" id="pill" aria-label="التنقل في الصفحة">
+  <a href="#classify">التصنيف</a><a href="#examples">الأمثلة</a><a href="#bank">البنك</a><a href="#practice">التدريب</a><a href="#verbs">الأفعال</a>
+</nav>
+<div class="app">
+  <header class="hero" id="top">
+    <div>
+      <p class="eyebrow">إعداد: سيمة بنت سلام بن سليمان الهشامية</p>
+      <p class="eyebrow job">أخصائي تقويم مادة التربية الإسلامية أول</p>
+      <h1><span class="mask"><span>مشكاة</span></span></h1>
+      <p class="hero-sub">مصنف مفردات الأسئلة وفق مستويات بلوم المعرفية في مادة التربية الإسلامية للصفوف (٥-١٢)</p>
+      <a class="cta" href="#classify" data-magnetic>ابدأ التصنيف</a>
+    </div>
+    <div class="niche" aria-hidden="true"></div>
+  </header>
+
+  <div class="layout">
+    <main class="main">
+      <section id="classify">
+        <div class="card reveal"><h3><span class="no">٠١</span> اختر الصف أولاً</h3>
+          <select id="grade">
+            <option value="">-- اختر الصف --</option>
+            <option>الخامس</option><option>السادس</option><option>السابع</option>
+            <option>الثامن</option><option>التاسع</option><option>العاشر</option>
+            <option>الحادي عشر</option><option>الثاني عشر</option>
+          </select>
+        </div>
+        <div class="card reveal"><h3><span class="no">٠٢</span> اختر الفصل الدراسي</h3>
+          <select id="semester">
+            <option value="">-- اختر الفصل الدراسي --</option>
+            <option value="1">الفصل الدراسي الأول</option>
+            <option value="2">الفصل الدراسي الثاني</option>
+          </select>
+        </div>
+        <div class="card reveal"><h3><span class="no">٠٣</span> أدخل السؤال</h3>
+          <textarea id="question" placeholder="اكتب مفردة السؤال هنا"></textarea>
+        </div>
+        <div class="card reveal"><h3><span class="no">٠٤</span> الكلمات المفتاحية / الأفعال / المعايير</h3>
+          <textarea id="keywordsBox" style="min-height:46px" placeholder="سيُكتشف الفعل السلوكي هنا تلقائياً بعد الضغط على «صنّف السؤال»"></textarea>
+        </div>
+        <button class="btn btn-main reveal" id="classifyBtn">صنّف السؤال</button>
+        <div class="card" id="resultCard" style="display:none"><h3><span class="no">النتيجة</span> مستوى السؤال</h3>
+          <div id="resultLevel"></div>
+          <div class="result-q" id="resultQ"></div>
+          <div class="result-suggest" id="resultSuggest" style="display:none"></div>
+          <button class="btn btn-approve" id="approveBtn" style="display:none">موافق — إضافة إلى بنك الأسئلة</button>
+        </div>
+      </section>
+
+      <section id="examples">
+        <div class="card reveal"><h3><span class="no">٠٥</span> أمثلة جاهزة لكل مستوى (اختياري)</h3>
+          <p class="muted" style="margin:0 0 10px">اختر مستوى لرؤية أمثلة توضيحية يمكنك تعديلها لتناسب درسك.</p>
+          <select id="genLevel" style="margin-bottom:10px">
+            <option value="">-- اختر المستوى --</option>
+            <option value="1">تذكر</option><option value="2">فهم</option><option value="3">تطبيق</option>
+            <option value="4">تحليل</option><option value="5">التقويم</option><option value="6">الإبداع</option>
+          </select>
+          <div id="genResult"></div>
+        </div>
+      </section>
+
+      <section id="bank">
+        <div class="card reveal"><h3><span class="no">٠٦</span> تصفية البنك والتدريب</h3>
+          <p class="muted" style="margin:0 0 10px">هذا الفلتر مستقل عن خانتي الإدخال في الأعلى، ويطبَّق على البنك وسُلَّم النور والأسئلة التدريبية.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <select id="filterGrade" aria-label="تصفية حسب الصف">
+              <option value="">كل الصفوف</option>
+              <option>الخامس</option><option>السادس</option><option>السابع</option>
+              <option>الثامن</option><option>التاسع</option><option>العاشر</option>
+              <option>الحادي عشر</option><option>الثاني عشر</option>
+            </select>
+            <select id="filterSem" aria-label="تصفية حسب الفصل الدراسي">
+              <option value="">كل الفصول</option>
+              <option value="1">الفصل الدراسي الأول</option>
+              <option value="2">الفصل الدراسي الثاني</option>
+              <option value="0">غير محدد الفصل</option>
+            </select>
+          </div>
+        </div>
+        <div class="card reveal"><h3><span class="no">٠٧</span> جميع الأسئلة حسب المستويات</h3>
+          <p class="muted" id="storeNote" style="margin:0 0 10px"></p>
+          <div class="stats-row" id="statsRow"></div>
+          <div id="bankList" style="margin-top:12px;max-height:260px;overflow:auto"></div>
+          <p class="muted" id="bankEmpty">لم يتم حفظ أي أسئلة بعد.</p>
+        </div>
+      </section>
+
+      <section id="practice">
+        <div class="card reveal"><h3><span class="no">٠٨</span> إنشاء أسئلة تدريبية</h3>
+          <p class="muted" style="margin:0 0 6px">حدد عدد الأسئلة المطلوبة من كل مستوى، وسيتم اختيارها تلقائياً من بنك الأسئلة المحفوظة.</p>
+          <p class="muted" id="filterNote" style="margin:0 0 10px;color:var(--accent)"></p>
+          <div id="testInputs"></div>
+          <button class="btn btn-ghost" id="buildTestBtn">إنشاء الأسئلة التدريبية</button>
+          <div id="testOutput" style="margin-top:12px"></div>
+        </div>
+      </section>
+
+      <section id="verbs">
+        <div class="card reveal"><h3><span class="no">٠٩</span> الأفعال والصيغ المعتمدة لكل مستوى</h3>
+          <p class="muted" style="margin:0 0 10px">جميع الأفعال والصيغ الواردة في السيناريو لكل مستوى (يمكنك أيضاً الضغط على المستوى في سُلَّم النور).</p>
+          <select id="verbLevel" style="margin-bottom:10px">
+            <option value="">-- اختر المستوى --</option>
+            <option value="1">تذكر</option><option value="2">فهم</option><option value="3">تطبيق</option>
+            <option value="4">تحليل</option><option value="5">التقويم</option><option value="6">الإبداع</option>
+          </select>
+          <div id="verbList"></div>
+        </div>
+      </section>
+
+      <p class="footer-note">يعتمد التصنيف على قوائم الأفعال والصيغ المرجعية لمستويات بلوم كما وردت في سيناريو المشروع دون أي مصادر خارجية، مع تطبيق قواعد المطابقة (تجاهل التشديد، توحيد أشكال الهمزة، تطابق المذكر والمؤنث، مرونة السوابق واللواحق).</p>
+    </main>
+
+    <aside class="sidebar">
+      <div class="ladder reveal">
+        <h4>سُلَّم النور</h4>
+        <p class="hint">يصعد الضوء إلى مستوى سؤالك</p>
+        <div id="orb" class="idle" aria-hidden="true"></div>
+        <div id="levelsList"></div>
+      </div>
+    </aside>
+  </div>
+</div>
+<script>
+const LEVELS = [
+  {n:1, name:"تذكر", color:"var(--lvl1)"},
+  {n:2, name:"فهم", color:"var(--lvl2)"},
+  {n:3, name:"تطبيق", color:"var(--lvl3)"},
+  {n:4, name:"تحليل", color:"var(--lvl4)"},
+  {n:5, name:"التقويم", color:"var(--lvl5)"},
+  {n:6, name:"الإبداع", color:"var(--lvl6)"}
+];
+
+// قوائم الأفعال والصيغ كما وردت في السيناريو: KW_MAIN = قوائم صيغ الأمر البرمجية، KW_REF = قوائم الكلمات المرجعية (ما زاد عليها)
+const KW_MAIN = {"1": ["اذكر", "اذكري", "عدّد", "عددي", "سمِّ", "سمي", "عرّف", "عرّفي", "حدد", "حددي", "اكتب الآية", "اكتب الحديث", "اكتبي الآية", "اكتبي الحديث", "أكمل", "أكملي", "اتلُ الآيات", "اذكر الحديث", "اكتب من قول الله تعالى", "اكتبي من قول الله تعالى", "اكتب الآيات", "اكتبي الآيات", "اكتب الآيات من قول الله تعالى", "اكتبي الآيات من قول الله تعالى", "متى حدث", "أين ورد", "أين تجد", "من القائل", "ما المقصود بـ", "بماذا"], "2": ["فسّر", "فسري", "اشرح", "اشرحي", "وضّح", "وضحي", "بيّن المعنى", "بيني المعنى لخّص بأسلوبك", "لخصي بأسلوبك", "أعد صياغة التعريف", "أعيدي صياغة التعريف", "اعط أمثلة على", "اعطي أمثلة على", "ما الفرق بين", "فرق", "فرقي", "قارن بين من حيث", "قارني بين", "قارن بين", "ما علاقة", "ما العلاقة", "صنّف", "صنفي", "رتّب الأفكار", "رتب الأحداث", "رتبي الأفكار", "رتبي الأحداث", "استنبط المعنى العام", "استنبطي المعنى العام", "استنبط المعنى", "وضّح دلالة الآية", "وضح دلالة الحديث", "وضحي دلالة الآية", "وضحي دلالة الحديث", "ناقش", "ناقشي", "صِف", "صِفي", "ما الذي", "عبر بأسلوبك عن معنى", "عبري بأسلوبك عن معنى", "عبر بأسلوبك", "عبري بأسلوبك", "استشهد من الموقف على", "لخص", "لخصي"], "3": ["طبّق", "طبقي", "كيف تطبق", "كيف تطبقي", "وظف", "وظفي", "وظّف آية", "وظف الآية", "وظف حديثًا", "وظف الحديث", "وظفي القيم", "وظّفي آية", "وظفي حديثًا", "وظف النصوص الشرعية", "كيف توظف", "كيف توظفي", "كيف تجسد", "كيف تجسدي", "كيف تترجم", "كيف تترجمي", "كيف تتصرف", "كيف تتصرفي", "ماذا تفعل إذا", "ماذا تفعلي إذا", "ماذا تفعل", "ماذا تفعلي", "كيف تطبق هذا الخلق في حياتك", "كيف تطبقي هذا الخلق في حياتك", "مثل بسلوك", "مثّل بسلوك عملي", "مثّلي بسلوك عملي", "عدل السلوك الخاطئ بسلوك صحيح", "عدلي السلوك الآتي بسلوك صحيح", "عدّل السلوك", "عدّلي السلوك", "أرشد زميلك", "أرشدي زميلتك", "أرشد زميلك إلى التصرف الصحيح", "أرشدي زميلتك إلى التصرف الصحيح", "استخدم ما تعلمته", "استخدم ما تعلمته في حل موقف", "استخدمي ما تعلمتيه في حل موقف", "بين التصرف", "بيّن التصرف الصحيح", "بيني التصرف الصحيح", "ما التصرف الصحيح", "ما التصرف", "كيف يمكنك توظيف", "كيف يمكنك تطبيق", "بين كيفية تطبيقك", "بيني كيفية تطبيقك", "بين كيفية توظيفك", "بيني كيفية توظيفك", "كيف تستفيد", "كيف تستفيدي", "كيف تساهم", "كيف تساهمي", "وجّه أصحاب المواقف الآتية", "وجّهي أصحاب المواقف الآتية", "كيف تتحلى", "بم توجه", "بم توجهي", "بماذا توجه", "بماذا توجهي", "كيف توجّه", "كيف توجّهي", "ما توجيهك", "بم ترشد", "بم ترشدي", "كيف ترشد", "كيف ترشدي", "أعط توجيها", "أعطي توجيها", "اشرح كيف تطبق", "اشرحي كيف تطبقي", "اشرح كيف توظف", "اشرح كيف توظفي", "كيف تفعّل القيم في حياتك", "كيف تفعّلي القيم في حياتك", "كيف تتأسى", "كيف تتأسين", "كيف تقتدي", "كيف تقتدين", "كيف تتمثل", "كيف تتمثلي", "عبر عن كيفية تطبيقك", "عبري عن كيفية تطبيقك", "عبر عن سلوكك", "عبري عن سلوكك", "كيف تتعامل مع"], "4": ["حلّل", "حلّلي", "استنتج", "استنتجي", "استخرج", "استخرجي", "استنتج السبب", "استنتجي السبب", "استخلص النتائج", "استخلصي النتائج", "استخرج الدلالات", "استخرجي الدلالات", "ميّز بين", "ميّزي بين", "استخلص القيمة", "استخلصي القيمة", "اربط بين السبب والنتيجة", "اربطي بين السبب والنتيجة", "اربط بين السبب والأثر", "اربطي بين السبب والأثر", "حدّد أوجه الشبه والاختلاف", "حددّي أوجه الشبه والاختلاف", "بيّن العلاقة بين", "بيّني العلاقة بين", "علّل", "علّلي", "علل ما يأتي", "عللي ما يأتي", "علل ما يلي", "عللي ما يلي", "حلّل الآثار المترتبة على", "حلّلي الآثار المترتبة على", "حلل الآثار", "حللي الآثار", "حدّد المشكلة وأسبابها", "حدّدي المشكلة وأسبابها", "حدد المشكلة", "حددي المشكلة", "استنتج القيمة", "استنتج المبدأ", "استنتجي القيمة", "استنتجي المبدأ", "استنتج الآثار", "استنتجي الآثار", "دلّل على الفكرة من الآية", "دلّل على الفكرة من الحديث", "دلّلي على الفكرة من الآية", "دلّلي على الفكرة من الحديث", "دلل", "دللي", "قارن بين المواقف من حيث الأسباب والنتائج", "قارني بين المواقف من حيث الأسباب والنتائج", "استخرج جوانب الخطأ والصواب في الموقف", "استخرجي جوانب الخطأ والصواب في المواقف", "قارن بين السلوكين واحكم", "قارن بين الموقفين الآتيين", "قارني بين الموقفين الآتيين", "وازني بين الموقفين", "وازن بين الموقفين", "تنبأ بالنتائج المتوقعة", "تنبئي بالنتائج المتوقعة", "تدبر النصوص ثم استخلص", "تدبري النصوص ثم استخلصي", "ما دلالة", "بين الحكمة", "ما الحكمة", "بين أثر", "بيني أثر", "ما الحكم الشرعي", "بين الحكم الشرعي", "بيني الحكم الشرعي", "وضح الحكم الشرعي", "وضحي الحكم الشرعي", "استنبط الحكم الشرعي", "استنبطي الحكم الشرعي", "استنبط", "استنبطي", "ما الأثر المترتب", "تدبر النصوص ثم استنتج", "تدبري النصوص ثم استنتجي", "تدبر النصوص ثم استخرج", "تدبري النصوص ثم استخرجي", "وضح العلاقة بين", "وضحي العلاقة بين", "بيّن علاقة", "بيّني علاقة", "بين العلاقة", "بيني العلاقة", "كيف توفق بين", "كيف توفقي بين"], "5": ["قيّم المواقف مع التعليل", "قيّم المواقف مع ذكر السبب", "قيم الموقف مع ذكر السبب", "قيّم الموقف مع التعليل", "قيّمي المواقف مع التعليل", "قيّمي الموقف مع التعليل", "قوّم الموقف مع التعليل", "قوّم المواقف مع التعليل", "قوّمي المواقف مع التعليل", "قومي الموقف مع التعليل", "قيّم التصرف مع التعليل", "قيّم التصرفات مع التعليل", "قيّمي التصرف مع التعليل", "قيّمي التصرفات مع التعليل", "قيم التصرف مع ذكر السبب", "قيّم التصرفات مع ذكر السبب", "قوّم التصرف مع التعليل", "قوّم التصرفات مع التعليل", "قوّمي التصرف مع التعليل", "قوّمي التصرفات مع التعليل", "احكم على", "احكمي على", "برّر موقفك", "برّري موقفك", "ناقش مع التعليل", "ناقشي مع التعليل", "انقد العبارة", "انقد التصرف", "انقدي العبارة", "انقدي التصرف", "فنّد الرأي الخاطئ", "فنّدي الرأي الخاطئ", "فند المواقف الآتية", "فندي المواقف الآتية", "فند العبارة الآتية", "فندي العبارة الآتية", "ما رأيك", "ما رأيك في هذا السلوك ولماذا", "بين رأيك", "بيني رأيك", "كيف ترد على هذا الرأي", "كيف تردي على هذا الرأي", "برهن", "برهن على صحة الحكم", "برهن على صحة الموقف", "برهني على صحة الحكم", "برهني على صحة الموقف", "كيف تبرهن", "كيف تبرهني", "حدّد الموقف الصحيح مع التعليل", "حدّدي الموقف الصحيح مع التعليل", "بيّن رأيك مستندًا إلى آية", "بيّن رأيك مستندًا إلى حديث", "بيّني رأيك مستندًا إلى آية", "بيّني رأيك مستندًا إلى حديث", "صحح", "صححي", "صحح التصرف", "صحح التصرف الخاطئ", "صححي التصرف الخاطئ", "صححي التصرف", "صحح الموقف", "صححي الموقف", "صحّح التصرف الخاطئ مع بيان السبب", "صحّحي التصرف الخاطئ مع بيان السبب", "صحح السلوك", "صححي السلوك", "صحح السلوك الخاطئ مع التعليل", "صححي السلوك الخاطئ مع التعليل", "ما التصرف الخاطئ مع التعليل", "ما التصرف الخاطئ مع ذكر السبب", "ما موقفك", "بين موقفك", "بيني موقفك", "كيف تدحض", "كيف تدحضي", "ادحض ما يلي", "ادحضي ما يلي", "بم ترد", "بم تردي", "كيف ترد", "كيف تردي", "ما ردُّكَ على من", "اختر الموقف مع التعليل", "اختاري الموقف مع التعليل", "عبر عن رأيك مع التعليل", "عبري عن رأيك مع التعليل", "عبر عن رأيك في المواقف الآتية", "عبري عن رأيك في المواقف الآتية", "عبر عن رأيك", "عبري عن رأيك", "كيف تقوم سلوكك إذا", "كيف تقومي سلوكك إذا"], "6": ["صمّم", "صمّمي", "أنشئ", "أنشئي", "صُغ", "صيغي", "كوّن خطة", "كوّني خطة", "اقترح", "اقترحي", "اقترح حلولًا", "اقترحي حلولًا", "ما الاقتراحات", "قدم اقتراحات", "قدم مقترحات", "قدمي اقتراحات", "بم تقترح", "بم تقترحي", "قدمي مقترحات", "قدم اقتراحا", "قدم مقترحا", "اقترح حلا", "اقترحي حلا", "ما مقترحاتك", "بم تقترحين", "ماذا تقترح", "ماذا تقترحين", "اقترح سلوكا", "اقترحي سلوكا", "اقترح تصرفا", "اقترحي تصرفا", "اكتب رسالة توعوية", "اكتب رسالة", "اكتبي رسالة توعوية", "اكتبي رسالة", "اكتب مقترحاتك", "اكتبي مقترحاتك", "قدّم نصيحة", "قدّمي نصيحة", "ما النصيحة", "بم تنصح", "بم تنصحي", "بماذا تنصح", "بماذا تنصحي", "بما تنصح", "بما تنصحي", "ما نصيحتك", "قدّم مبادرة لتعزيز قيمة إسلامية", "قدّمي مبادرة", "قدم مبادرة", "اقترح مبادرة", "اقترحي مبادرة", "ابتكر طريقة", "ابتكري طريقة", "ابتكر طريقة عملية لتطبيق خلق إسلامي", "ابتكري طريقة عملية لتطبيق خلق إسلامي", "اربط بين أكثر من مفهوم لإنتاج فكرة جديدة", "صمّم مطوية", "صمم عبارة إرشادية", "اقترح برنامج مدرسي يعزز السلوك الصحيح", "اقترح نشاط مدرسي يعزز السلوك الصحيح", "اقترحي برنامج مدرسي يعزز السلوك الصحيح", "اقترحي نشاط مدرسي يعزز السلوك الصحيح", "اقترح برنامج", "اقترحي برنامج", "اقترح نشاط", "اقترحي نشاط", "اكتب الاقتراح", "اكتب الاقتراحات", "اكتبي الاقتراح", "اكتبي الاقتراحات", "وجّه رسالة لزملائك تتضمن مقترحات عملية", "وجّه رسالة لزملائك", "وجّهي رسالة لزميلاتك", "وجّه نصيحة", "وجّهي نصيحة", "وجّه نصيحتك", "وجّهي نصيحتك", "عبر برسالة توعوية مبتكرة", "عبري برسالة توعوية مبتكرة"]};
+const KW_REF = {"1": ["اذكري الحديث"], "2": ["بيني المعنى", "صحح", "صححي", "لخّص بأسلوبك", "رتّب الأفكار أو الأحداث"], "3": ["كيف تتصرف في الموقف الآتي", "كيف تستفيد من ذلك في حياتك", "كيف تستفيدي من ذلك في حياتك", "كيف تتعامل", "كيف تطبق هذا الحكم أو الخلق في حياتك", "كيف تطبقي هذا الحكم أو الخلق في حياتك", "كيف تعترف", "كيف تعترفي"], "4": ["استخلص", "علل لما يأتي", "علل لما يلي"], "5": ["حدد الموقف الصحيح", "حددي الموقف الصحيح", "بيّن رأيك مستندًا إلى آية أو حديث", "بيّني رأيك مستندًا إلى آية أو حديث", "برهن على صحة الحكم أو الموقف", "برهني على صحة الحكم أو الموقف"], "6": ["صمّم مطوية أو عبارة إرشادية", "بم تنصحها", "بم تنصحه"]};
+const LEVEL_KEYWORDS = {};
+for(const l of Object.keys(KW_MAIN)) LEVEL_KEYWORDS[l] = KW_MAIN[l].concat(KW_REF[l]);
+
+const LEVEL_ANALYSIS = {
+  1: "يقيس هذا السؤال قدرة الطالب على استدعاء وحفظ المعلومات والمفاهيم الأساسية.",
+  2: "يقيس هذا السؤال قدرة الطالب على استيعاب الفكرة وشرحها أو التعبير عنها بأسلوبه الخاص، بدلاً من مجرد الحفظ.",
+  3: "يقيس هذا السؤال قدرة الطالب على تطبيق ما تعلمه عملياً في مواقف حياتية واقعية.",
+  4: "يقيس هذا السؤال مهارات التفكير العليا لدى الطالب: تفكيك الأفكار، وربط العلاقات، واستنتاج الأسباب والنتائج.",
+  5: "يقيس هذا السؤال قدرة الطالب على إصدار حكم مبني على معايير، ونقد المواقف أو الآراء بوعي.",
+  6: "يقيس هذا السؤال قدرة الطالب على الابتكار ودمج المعلومات لإنتاج فكرة أو حل أو خطة جديدة."
+};
+
+const LEVEL_EXAMPLES = {
+  1: ["اذكر أركان الإسلام الخمسة.", "عدّد شروط الوضوء.", "اكتب الآية الدالة على وجوب الصلاة."],
+  2: ["اشرح المقصود بالإخلاص في العبادة.", "وضّح دلالة الآية على أهمية بر الوالدين.", "لخّص بأسلوبك فضل صلة الرحم."],
+  3: ["كيف تطبق خلق الصدق في تعاملك مع زملائك؟", "ماذا تفعل إذا رأيت زميلاً يهمل الصلاة؟", "بيّن التصرف الصحيح عند سماع الأذان وأنت في السوق."],
+  4: ["حلّل أثر الغيبة على تماسك المجتمع.", "قارن بين موقف المؤمن والمنافق عند الشدائد من حيث الأسباب والنتائج.", "علّل تحريم الربا في الإسلام."],
+  5: ["قيّم موقف من يؤخر الصلاة بحجة الانشغال بالعمل، مع التعليل.", "ناقش مع التعليل رأي من يرى أن الصدق يضر أحياناً.", "برّر موقفك تجاه من يتهاون في أداء الأمانة."],
+  6: ["صمّم مطوية توعوية عن آداب الحوار في الإسلام.", "اقترح مبادرة مدرسية لتعزيز قيمة التعاون بين الطلاب.", "اكتب رسالة توعوية لزميلك عن خطورة الغش.", "تريد فاطمة ابتكار منصة رقمية تفاعلية تعزز قيمة التعاون بين الشباب المسلم للنهوض بمجتمعاتهم المحلية، بم تنصحها لتكون منصتها فاعلة وإيجابية؟"]
+};
+
+function levelColor(n){ return LEVELS.find(l=>l.n==n)?.color || "#888"; }
+function levelName(n){ return LEVELS.find(l=>l.n==n)?.name || "?"; }
+
+// ---------- Arabic normalization ----------
+function normalizeArabic(text){
+  return text
+    .replace(/[\u064B-\u0652\u0670\u0640]/g, '')   // remove tashkeel + tatweel
+    .replace(/[إأآا]/g, 'ا')
+    .replace(/ى/g, 'ي')
+    .replace(/ة/g, 'ه')
+    .replace(/ؤ/g, 'و')
+    .replace(/ئ/g, 'ي')
+    .replace(/[؟!.,،؛:"'()\-\/]/g, m => m === '/' ? '/' : ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// strip a leading definite article "ال" for loose comparison (e.g. الموقف ~ موقف)
+function stripAl(word){
+  if(word.length > 4 && word.startsWith('ال')) return word.slice(2);
+  return word;
+}
+
+// expand "الموقف/المواقف" style alternatives into separate full phrases
+function expandSlashPhrase(phrase){
+  const tokens = phrase.split(' ');
+  const slashIdx = tokens.findIndex(t => t.includes('/'));
+  if(slashIdx === -1) return [phrase];
+  const alts = tokens[slashIdx].split('/');
+  return alts.flatMap(alt => {
+    const copy = tokens.slice();
+    copy[slashIdx] = alt;
+    return expandSlashPhrase(copy.join(' '));
+  });
+}
+
+// Build a flat index: primary lists (system-prompt lists) first, then reference lists; longest phrase first
+const KEYWORD_INDEX = [];
+for(const src of [KW_MAIN, KW_REF]){
+  for(const lvl of Object.keys(src)){
+    for(const rawPhrase of src[lvl]){
+      const words = normalizeArabic(rawPhrase).split(' ').filter(Boolean).map(stripAl);
+      if(words.length) KEYWORD_INDEX.push({ level: parseInt(lvl), phrase: rawPhrase, words });
+    }
+  }
+}
+KEYWORD_INDEX.sort((a,b) => b.words.length - a.words.length);   // stable: ties keep primary-list order
+
+// does a question word match a keyword word? (same word, feminine ـي form, or with و/ف prefix)
+function wordMatch(hw, nw){
+  if(hw === nw) return true;
+  if(nw.length < 3) return false;
+  if(hw.length === nw.length + 1 && hw.endsWith('ي') && hw.slice(0, -1) === nw) return true;   // اذكري ~ اذكر
+  if(hw.length === nw.length + 1 && (hw[0] === 'و' || hw[0] === 'ف') && hw.slice(1) === nw) return true;   // فاذكر ~ اذكر
+  return false;
+}
+
+// in-order subsequence match: every keyword word must appear in the question in the same
+// relative order, not necessarily contiguous (allows the situation text between the words)
+function matchesInOrder(haystackWords, needleWords){
+  let pos = 0;
+  for(const nw of needleWords){
+    let found = -1;
+    for(let i = pos; i < haystackWords.length; i++){
+      if(wordMatch(haystackWords[i], nw)){ found = i; break; }
+    }
+    if(found === -1) return false;
+    pos = found + 1;
+  }
+  return true;
+}
+
+function classifyQuestion(question){
+  const norm = normalizeArabic(question);
+  const qWords = norm.split(' ').filter(Boolean).map(stripAl);
+  for(const entry of KEYWORD_INDEX){
+    if(matchesInOrder(qWords, entry.words)){
+      return { level: entry.level, matched: entry.phrase };
+    }
+  }
+  return null;
+}
+
+function pickLevelUpTip(currentLevel){
+  if(currentLevel >= 6) return null;
+  const nextLevel = currentLevel + 1;
+  const pool = LEVEL_KEYWORDS[nextLevel].filter(p => p.split(' ').length <= 2 && !/ي$/.test(normalizeArabic(p)));
+  const sample = pool.slice(0, 3);
+  return `لرفع مستوى هذا السؤال إلى «${levelName(nextLevel)}»، جرّب صياغته باستخدام أفعال مثل: ${sample.join('، ')}.`;
+}
+
+// ---------- render sidebar ----------
+function renderSidebar(bank){
+  const el = document.getElementById('levelsList');
+  el.innerHTML = LEVELS.slice().reverse().map(l=>{
+    const count = bank.filter(b=>b.level_number==l.n).length;
+    return `<div class="lvl-item" data-level="${l.n}">
+      <div class="lvl-dot" style="background:${l.color}">${l.n}</div>
+      <div class="lbl">${l.name}</div>
+      <div class="cnt">${count}</div>
+    </div>`;
+  }).join('');
+  applyLadder();
+}
+
+// ---------- bank storage (shared between all teachers) ----------
+// لتفعيل البنك المشترك لجميع المعلمين: ضع رابط قاعدة بيانات Firebase Realtime Database بين علامتي الاقتباس
+// مثال: "https://mishkat-xxxxx-default-rtdb.firebaseio.com"
+const SHARED_DB_URL = "";
+const MODE = SHARED_DB_URL ? 'firebase' : (window.storage ? 'artifact' : 'local');
+const SHARED = MODE !== 'local';
+const DB_BASE = SHARED_DB_URL.replace(/\/+$/, '');
+
+function esc(t){ return String(t == null ? '' : t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function sanitizeItem(o, id){
+  if(!o || typeof o !== 'object') return null;
+  const lvl = parseInt(o.level_number);
+  const q = String(o.question || '').trim().slice(0, 1000);
+  if(!q || !(lvl >= 1 && lvl <= 6)) return null;
+  return { id: id || o.id || String(Date.now()), question: q, grade: String(o.grade || '').slice(0, 20),
+           semester: [1,2].includes(parseInt(o.semester)) ? parseInt(o.semester) : 0, level_number: lvl, ts: +o.ts || 0 };
+}
+
+let _mem = [];
+let _storeError = false;
+async function loadBank(){
+  try{
+    let items = [];
+    if(MODE === 'firebase'){
+      const r = await fetch(DB_BASE + '/bank.json', {cache:'no-store'});
+      if(!r.ok) throw new Error(r.status);
+      const data = await r.json() || {};
+      items = Object.entries(data).map(([k, v]) => sanitizeItem(v, k));
+    } else if(MODE === 'artifact'){
+      const l = await window.storage.list('bank:', true);
+      const got = await Promise.all(((l && l.keys) || []).map(async k => {
+        try{ const r = await window.storage.get(k, true); return r ? sanitizeItem(JSON.parse(r.value), k) : null; }catch(e){ return null; }
+      }));
+      items = got;
+    } else {
+      const v = localStorage.getItem('mishkat-bank');
+      items = (v ? JSON.parse(v) : []).map(o => sanitizeItem(o, o.id));
+    }
+    _mem = items.filter(Boolean).sort((a, b) => a.ts - b.ts);
+    _storeError = false;
+  }catch(e){ _storeError = true; }
+  return _mem;
+}
+async function addToBank(item){
+  const rec = { question: item.question, grade: item.grade, semester: item.semester, level_number: item.level_number, ts: Date.now() };
+  try{
+    if(MODE === 'firebase'){
+      const r = await fetch(DB_BASE + '/bank.json', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(rec)});
+      if(!r.ok) throw new Error(r.status);
+    } else if(MODE === 'artifact'){
+      await window.storage.set('bank:' + rec.ts + '-' + Math.random().toString(36).slice(2, 7), JSON.stringify(rec), true);
+    } else {
+      const all = JSON.parse(localStorage.getItem('mishkat-bank') || '[]');
+      all.push(Object.assign({id: rec.ts}, rec));
+      localStorage.setItem('mishkat-bank', JSON.stringify(all));
+    }
+    return true;
+  }catch(e){ return false; }
+}
+
+function semName(s){ return s==1 ? 'الفصل الأول' : s==2 ? 'الفصل الثاني' : 'غير محدد'; }
+function filterLabel(){
+  const g = document.getElementById('filterGrade').value, s = document.getElementById('filterSem').value;
+  const parts = [];
+  parts.push(g ? 'الصف ' + g : 'كل الصفوف');
+  parts.push(s === '' ? 'كل الفصول' : s === '0' ? 'الفصل غير المحدد' : semName(+s));
+  return parts.join(' — ');
+}
+function applyFilter(all){
+  const g = document.getElementById('filterGrade').value, s = document.getElementById('filterSem').value;
+  return all.filter(b => (!g || b.grade === g) && (s === '' || (b.semester || 0) === +s));
+}
+
+async function refreshBankUI(){
+  const allBank = await loadBank();
+  const bank = applyFilter(allBank);
+  renderSidebar(bank);
+  document.getElementById('filterNote').textContent = 'الفلتر الحالي: ' + filterLabel();
+  document.getElementById('storeNote').textContent = _storeError ? 'تعذّر الاتصال بالبنك المشترك حالياً، سيُعاد المحاولة تلقائياً.'
+    : SHARED ? 'البنك مشترك: تظهر الأسئلة المضافة لجميع المعلمين للاستفادة منها (يتجدد تلقائياً).'
+    : 'تنبيه: لم يُربط البنك بقاعدة بيانات مشتركة بعد، لذا تُحفظ الأسئلة على هذا الجهاز فقط.';
+
+  const statsRow = document.getElementById('statsRow');
+  statsRow.innerHTML = LEVELS.map(l=>{
+    const count = bank.filter(b=>b.level_number==l.n).length;
+    return `<div class="stat-chip" style="background:${l.color}"><span class="num">${count}</span>${l.name}</div>`;
+  }).join('');
+
+  const list = document.getElementById('bankList');
+  const empty = document.getElementById('bankEmpty');
+  if(bank.length === 0){
+    list.innerHTML = '';
+    empty.style.display = 'block';
+    empty.textContent = allBank.length ? 'لا توجد أسئلة مطابقة للفلتر المختار.' : 'لم يتم حفظ أي أسئلة بعد.';
+  } else {
+    empty.style.display = 'none';
+    list.innerHTML = bank.slice().reverse().map(b=>`
+      <div class="bank-row">
+        <span class="lvl-pill" style="background:${levelColor(b.level_number)}">${b.level_number}</span>
+        <span class="txt">${esc(b.question)}</span>
+        <span class="grade-tag">${esc(b.grade)} · ${semName(b.semester)}</span>
+      </div>`).join('');
+  }
+
+  const testInputs = document.getElementById('testInputs');
+  if(!testInputs.children.length) testInputs.innerHTML = LEVELS.map(l=>`
+    <label style="font-size:12px; text-align:center; display:block;">
+      ${l.name}<br>
+      <input type="text" inputmode="numeric" data-level="${l.n}" value="0"
+        style="text-align:center; padding:6px; margin-top:3px;">
+    </label>`).join('');
+}
+
+// ---------- render a classification result (shared by offline + AI paths) ----------
+function renderResult(question, grade, semester, level, matchedPhrase, analysisText, suggestionHtml){
+  document.getElementById('keywordsBox').value = `الفعل/الصيغة المكتشفة: ${matchedPhrase}`;
+
+  document.getElementById('resultLevel').innerHTML =
+    `<div class="result-level" style="background:${levelColor(level)}">
+      المستوى ${level}: ${levelName(level)}
+    </div>`;
+  document.getElementById('resultQ').innerHTML =
+    `<b>السؤال:</b> ${esc(question)}<br><span class="muted" style="font-size:13px;">${analysisText}</span>`;
+
+  const sugBox = document.getElementById('resultSuggest');
+  sugBox.style.display = 'block';
+  sugBox.innerHTML = suggestionHtml;
+
+  document.getElementById('resultCard').style.display = 'block';
+  lightLevel(level);
+  const approveBtn = document.getElementById('approveBtn');
+  approveBtn.style.display = 'block';
+  approveBtn.disabled = false;
+  approveBtn.textContent = 'موافق — إضافة إلى بنك الأسئلة';
+  approveBtn.onclick = async () => {
+    approveBtn.disabled = true;
+    const cur = await loadBank();
+    if(cur.some(b => b.grade === grade && (b.semester || 0) === semester && normalizeArabic(b.question) === normalizeArabic(question))){
+      approveBtn.textContent = 'هذا السؤال موجود مسبقاً في البنك'; return;
+    }
+    const ok = await addToBank({ question, grade, semester, level_number: level });
+    if(!ok){ alert('تعذّر حفظ السؤال في البنك. تحقق من الاتصال بالإنترنت وحاول مرة أخرى.'); approveBtn.disabled = false; return; }
+    await refreshBankUI();
+    approveBtn.textContent = SHARED ? 'تمت الإضافة إلى البنك المشترك' : 'تمت الإضافة إلى بنك الأسئلة';
+  };
+}
+
+// ---------- classify button (offline matching only) ----------
+document.getElementById('classifyBtn').addEventListener('click', () => {
+  const grade = document.getElementById('grade').value;
+  const semester = parseInt(document.getElementById('semester').value) || 0;
+  const question = document.getElementById('question').value.trim();
+  document.getElementById('resultCard').style.display = 'none';
+  if(!grade){ alert('الرجاء اختيار الصف أولاً'); return; }
+  if(!semester){ alert('الرجاء اختيار الفصل الدراسي'); return; }
+  if(!question){ alert('الرجاء إدخال السؤال'); return; }
+
+  const result = classifyQuestion(question);
+
+  if(!result){
+    document.getElementById('keywordsBox').value = 'لم يتم العثور على فعل سلوكي واضح ضمن القوائم المرجعية. حاول إعادة صياغة السؤال ببدء بفعل سلوكي واضح (مثل: اذكر، اشرح، طبّق، حلّل، قيّم، صمّم...).';
+    return;
+  }
+
+  const tip = (result.level < 6)
+    ? `<span class="lbl">اقتراح لتحسين السؤال</span>${pickLevelUpTip(result.level)}`
+    : `<span class="lbl">ملاحظة</span>هذا أعلى مستوى معرفي (الإبداع)، السؤال ممتاز من حيث المستوى.`;
+
+  renderResult(question, grade, semester, result.level, result.matched, LEVEL_ANALYSIS[result.level], tip);
+});
+
+// ---------- examples ----------
+document.getElementById('genLevel').addEventListener('change', () => {
+  const levelN = document.getElementById('genLevel').value;
+  const out = document.getElementById('genResult');
+  if(!levelN){ out.innerHTML = ''; return; }
+  const examples = LEVEL_EXAMPLES[levelN] || [];
+  out.innerHTML = examples.map(ex => `<button type="button" class="example-chip">${ex}</button>`).join('');
+  out.querySelectorAll('.example-chip').forEach(btn=>{
+    btn.addEventListener('click', () => {
+      document.getElementById('question').value = btn.textContent;
+      document.getElementById('question').scrollIntoView({behavior:'smooth', block:'center'});
+    });
+  });
+});
+
+// ---------- verbs guide ----------
+function showVerbs(n){
+  const out = document.getElementById('verbList');
+  document.getElementById('verbLevel').value = n || '';
+  if(!n){ out.innerHTML = ''; return; }
+  const list = LEVEL_KEYWORDS[n] || [];
+  out.innerHTML = `<div class="result-level" style="background:${levelColor(n)}">${levelName(n)} — ${list.length} فعل/صيغة</div><div>` +
+    list.map(p => `<span class="vchip">${esc(p)}</span>`).join('') + '</div>';
+}
+document.getElementById('verbLevel').addEventListener('change', e => showVerbs(e.target.value));
+document.getElementById('levelsList').addEventListener('click', e => {
+  const it = e.target.closest('.lvl-item'); if(!it) return;
+  showVerbs(it.dataset.level);
+  document.getElementById('verbs').scrollIntoView({behavior: 'smooth', block: 'start'});
+});
+
+// ---------- quick test builder ----------
+document.getElementById('buildTestBtn').addEventListener('click', async () => {
+  const bank = applyFilter(await loadBank());
+  const inputs = document.querySelectorAll('#testInputs input');
+  const output = document.getElementById('testOutput');
+  let html = '';
+  let usedIds = new Set();
+  let shortages = [];
+
+  inputs.forEach(inp => {
+    const lvl = parseInt(inp.dataset.level);
+    const need = parseInt(inp.value) || 0;
+    if(need <= 0) return;
+    const avail = bank.filter(b => b.level_number === lvl && !usedIds.has(b.id));
+    const picked = avail.slice(0, need);
+    picked.forEach(p => usedIds.add(p.id));
+    if(picked.length < need) shortages.push(`${levelName(lvl)} (متاح ${picked.length} من ${need})`);
+    if(picked.length){
+      html += `<div style="margin-bottom:8px;">
+        <div class="result-level" style="background:${levelColor(lvl)}; font-size:13px; padding:4px 12px;">${levelName(lvl)}</div>
+        ${picked.map((p,i)=>`<div class="result-q" style="margin-bottom:6px;">${i+1}. ${esc(p.question)}</div>`).join('')}
+      </div>`;
+    }
+  });
+
+  if(!html){
+    output.innerHTML = '<p class="muted">حدد عدد أسئلة لمستوى واحد على الأقل، وتأكد من وجود أسئلة محفوظة في بنك الأسئلة.</p>';
+    return;
+  }
+  if(shortages.length){
+    html = `<p style="color:#ff9f8a; font-size:13px;">نقص في: ${shortages.join('، ')} ضمن الفلتر (${filterLabel()})</p>` + html;
+  }
+  output.innerHTML = html;
+});
+
+// ---------- cinematic layer ----------
+const RM = matchMedia('(prefers-reduced-motion:reduce)').matches;
+let curLvl = 0;
+function applyLadder(){
+  const box = document.querySelector('.ladder'), orb = document.getElementById('orb');
+  if(!box || !orb) return;
+  const it = box.querySelector('.lvl-item[data-level="' + (curLvl || 1) + '"]');
+  if(!it) return;
+  box.querySelectorAll('.lvl-item').forEach(x => x.classList.toggle('on', +x.dataset.level === curLvl));
+  const b = box.getBoundingClientRect(), r = it.querySelector('.lvl-dot').getBoundingClientRect();
+  orb.style.transform = 'translate(' + (r.left + r.width/2 - b.left - 23) + 'px,' + (r.top + r.height/2 - b.top - 23) + 'px)';
+}
+function lightLevel(n){
+  curLvl = n;
+  document.documentElement.style.setProperty('--world', levelColor(n));
+  document.getElementById('orb').classList.remove('idle');
+  applyLadder();
+  const c = document.getElementById('resultCard');
+  c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop');
+  c.scrollIntoView({behavior: RM ? 'auto' : 'smooth', block: 'nearest'});
+}
+addEventListener('resize', applyLadder);
+document.fonts && document.fonts.ready.then(applyLadder);
+
+// staggered reveals (content stays visible without JS / with reduced motion)
+const revIO = new IntersectionObserver(es => {
+  let i = 0;
+  es.forEach(en => { if(en.isIntersecting){ en.target.style.transitionDelay = (i++ * 90) + 'ms'; en.target.classList.add('in'); revIO.unobserve(en.target); } });
+}, {threshold: .12});
+document.querySelectorAll('.reveal').forEach(el => RM ? el.classList.add('in') : revIO.observe(el));
+
+// progress bar + nav that hides on scroll-down
+const progEl = document.getElementById('progress'), pillEl = document.getElementById('pill');
+let lastY = scrollY, ticking = false;
+addEventListener('scroll', () => {
+  if(ticking) return; ticking = true;
+  requestAnimationFrame(() => {
+    const y = scrollY, max = document.documentElement.scrollHeight - innerHeight;
+    progEl.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+    pillEl.classList.toggle('hide', y > lastY && y > 220);
+    lastY = y; ticking = false;
+  });
+}, {passive: true});
+const secIO = new IntersectionObserver(es => es.forEach(en => {
+  if(!en.isIntersecting) return;
+  pillEl.querySelectorAll('a').forEach(a => a.toggleAttribute('aria-current', a.getAttribute('href') === '#' + en.target.id));
+}), {rootMargin: '-40% 0px -55% 0px'});
+document.querySelectorAll('main section').forEach(s => secIO.observe(s));
+
+// pointer-only effects: card spotlight, hero niche light, magnetic CTA
+if(matchMedia('(hover:hover)').matches && !RM){
+  document.addEventListener('pointermove', e => {
+    const c = e.target.closest && e.target.closest('.card');
+    if(c){ const r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px'); }
+    const h = e.target.closest && e.target.closest('.hero');
+    if(h){ const r = h.getBoundingClientRect(); h.style.setProperty('--gx', ((e.clientX - r.left) / r.width * 100) + '%'); h.style.setProperty('--gy', (45 + (e.clientY - r.top) / r.height * 50) + '%'); }
+  });
+  document.querySelectorAll('[data-magnetic]').forEach(b => {
+    b.addEventListener('pointermove', e => { const r = b.getBoundingClientRect(); b.style.transform = 'translate(' + (e.clientX - r.left - r.width/2) * .25 + 'px,' + (e.clientY - r.top - r.height/2) * .35 + 'px)'; });
+    b.addEventListener('pointerleave', () => b.style.transform = '');
+  });
+}
+
+// init
+['filterGrade','filterSem'].forEach(id => document.getElementById(id).addEventListener('change', () => {
+  document.getElementById('testOutput').innerHTML = '';
+  refreshBankUI();
+}));
+refreshBankUI();
+if(SHARED) setInterval(refreshBankUI, 45000);
+</script>
+</body>
+</html>
