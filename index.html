@@ -390,7 +390,7 @@ function renderSidebar(bank){
 // ---------- bank storage (shared between all teachers) ----------
 // لتفعيل البنك المشترك لجميع المعلمين: ضع رابط قاعدة بيانات Firebase Realtime Database بين علامتي الاقتباس
 // مثال: "https://mishkat-xxxxx-default-rtdb.firebaseio.com"
-const SHARED_DB_URL = "";
+const SHARED_DB_URL = "https://mishkat-2947a-default-rtdb.asia-southeast1.firebasedatabase.app";
 const MODE = SHARED_DB_URL ? 'firebase' : (window.storage ? 'artifact' : 'local');
 const SHARED = MODE !== 'local';
 const DB_BASE = SHARED_DB_URL.replace(/\/+$/, '');
